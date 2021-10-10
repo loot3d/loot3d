@@ -1,0 +1,7 @@
+build/
+output/
+node_modules/
+desgin/models/
+apps/contracts/output/
+.env
+*.DS_Store

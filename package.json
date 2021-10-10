@@ -1,0 +1,24 @@
+{
+  "name": "loot3d",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "author": "Sanonz <sanonz@126.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanonz/loot3d.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanonz/loot3d/issues"
+  },
+  "homepage": "https://github.com/sanonz/loot3d#readme",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "rimraf": "^3.0.2"
+  }
+}

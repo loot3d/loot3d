@@ -1,0 +1,22 @@
+{
+  "name": "@loot3d/contracts",
+  "version": "1.0.0",
+  "description": "Loot 3D is the first collection of 3D character for loot metaverse.",
+  "scripts": {
+    "start": "npm run develop",
+    "console:rinkeby": "truffle console --network rinkeby",
+    "console:live": "truffle console --network live",
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "@openzeppelin/contracts-upgradeable": "^4.3.2",
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "dotenv": "^10.0.0",
+    "eth-gas-reporter": "^0.2.22",
+    "node-fetch": "^3.0.0",
+    "truffle": "^5.4.12",
+    "truffle-plugin-verify": "^0.5.15",
+    "web3": "^1.5.3"
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Loot3D | 0x2a0af8a5980a36b31fbe4f7ad4c05d6854a0daf2</title>
+    <style type="text/css">
+      <%= require('!!raw-loader!normalize.css').default %>
+      body {
+        color: #808a93;
+        background-color: #19232d;
+      }
+  
+      .loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 32px;
+        width: 32px;
+        transform: translate(-50%, -50%); 
+      }
+  
+      .loader-item {
+        position: absolute;
+        height: 32px;
+        width: 32px;
+        background: #fff;
+        animation: move 2s linear infinite;
+      }
+  
+      .loader-item:nth-of-type(1) {
+        top: -32px;
+        left: -32px;
+        animation-delay: -1.75s;
+      }
+      
+      .loader-item:nth-of-type(2) {
+        top: -32px;
+        left: 0;
+        animation-delay: -1.5s;
+      }
+      
+      .loader-item:nth-of-type(3) {
+          top: -32px;
+          left: 32px;
+          animation-delay: -1.25s;
+      }
+      
+      .loader-item:nth-of-type(4) {
+        top: 0;
+        left: 32px;
+        animation-delay: -1s;
+      }
+      
+      .loader-item:nth-of-type(5) {
+        top: 32px;
+        left: 32px;
+        animation-delay: -0.75s;
+      }
+      
+      .loader-item:nth-of-type(6) {
+          top: 32px;
+          left: 0;
+          animation-delay: -0.5s;
+      }
+      
+      .loader-item:nth-of-type(7) {
+        top: 32px;
+        left: -32px;
+        animation-delay: -0.25s;
+      }
+      
+      .loader-item:nth-of-type(8) {
+        top: 0;
+        left: -32px;
+        animation-delay: 0s;
+      }
+  
+      @keyframes move {
+        0% {
+          transform: rotate(0) scale(1);
+          animation-timing-function: ease-in;
+        }
+        10% {
+          transform: rotate(90deg) scale(0);
+        }
+        50% {
+          transform: rotate(90deg) scale(0);
+          animation-timing-function: ease-out;
+        }
+        60% {
+          transform: rotate(180deg) scale(1);
+        }
+        100% {
+          transform: rotate(180deg) scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="loader">
+        <div class="loader-item"></div>
+        <div class="loader-item"></div>
+        <div class="loader-item"></div>
+        <div class="loader-item"></div>
+        <div class="loader-item"></div>
+        <div class="loader-item"></div>
+        <div class="loader-item"></div>
+        <div class="loader-item"></div>
+      </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <% if(process.env.NODE_ENV === 'production') { %>
+      <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?f3ae7b868db03eeda7ac66ac475de55c";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+      <% } %>
+  </body>
+</html>
