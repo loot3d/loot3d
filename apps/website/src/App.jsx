@@ -48,7 +48,7 @@ function App() {
                     className="input bagInput"
                     type="number"
                     name="bagNumber"
-                    value={bagNumber}
+                    defaultValue={bagNumber}
                     onBlur={evt => setBagNumber(Math.min(Math.max(~~evt.target.value, 1), 8000))}
                     disabled={loading}
                   />
