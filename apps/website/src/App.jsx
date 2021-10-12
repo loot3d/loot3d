@@ -1,4 +1,5 @@
 import cx from 'classnames';
+import { useEffect, useRef } from 'react';
 
 import './App.scss';
 import Loader from './Loader';
@@ -7,7 +8,15 @@ import { useApp } from './useApp';
 const CONTRACT_ADDRESS = '0x2a0af8a5980a36b31fbe4f7ad4c05d6854a0daf2';
 
 function App() {
+  const inputRef = useRef();
   const [canvasRef, loading, bagNumber, setBagNumber, handleRandom, bagAsset] = useApp();
+
+  useEffect(() => {
+    const input = inputRef.current;
+    if (input) {
+      input.value = bagNumber;
+    }
+  }, [bagNumber]);
 
   return (
     <div className="app">
@@ -45,6 +54,7 @@ function App() {
                   onSubmit={(e) => e.preventDefault()}
                 >
                   <input
+                    ref={inputRef}
                     className="input bagInput"
                     type="number"
                     name="bagNumber"
